@@ -41,7 +41,7 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 
 ### App Walkthrough GIF
 
-<!-- <img src="http://g.recordit.co/FjI68NErBF.gif" width=250><br> -->
+<img src="http://g.recordit.co/FjI68NErBF.gif" width=250><br>
 
 ### Notes
 After I completed the project and tried to push everything to GitHub, I got a warning message when I tried to move the workplace file to the new GitHub repository folder. When I ignored the message and tried to record a GIF, I was no longer able to get my app to show because I got a "framework not found" error. My build kept failing, and it was only after I made a copy of the original workplace folder and moved it to the Github repository folder that my app started to work again. I do not know why this happened, and if this is a permanent solution, but I am submitting nonetheless what I have. 
