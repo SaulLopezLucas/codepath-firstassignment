@@ -28,6 +28,17 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         cell.posterView.af.setImage(withURL: posterURL)
         return cell
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let cell = sender as! UITableViewCell
+        let indexPath = TableView.indexPath(for:cell)!
+        let movie = movies[indexPath.row]
+        let detailsViewController = segue.destination as! MovieDetailsViewController
+        detailsViewController.movie = movie
+        TableView.deselectRow(at: indexPath, animated: true)
+        
+        
+    }
+    
     
     @IBOutlet weak var TableView: UITableView!
     
@@ -50,11 +61,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                  self.movies = dataDictionary["results"] as! [[String:Any]]
                  self.TableView.reloadData()
                     
-
-                    // TODO: Get the array of movies
-                    // TODO: Store the movies in a property to use elsewhere
-                    // TODO: Reload your table view data
-
              }
         }
         task.resume()
