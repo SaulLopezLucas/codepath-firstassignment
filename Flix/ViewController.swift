@@ -64,7 +64,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
              }
         }
         task.resume()
-        // Do any additional setup after loading the view.
     }
 
 

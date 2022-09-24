@@ -58,6 +58,7 @@ class MovieGridViewController: UIViewController, UICollectionViewDataSource, UIC
         
         let movie = movies[indexPath.item]
         
+        
         let baseURL = "https://image.tmdb.org/t/p/w185"
         let posterPath = movie["poster_path"] as! String
         let posterURL = URL(string: baseURL + posterPath)!
@@ -67,15 +68,12 @@ class MovieGridViewController: UIViewController, UICollectionViewDataSource, UIC
         
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        let gridCell = sender as! UICollectionViewCell
+        let indexPath = collectionView.indexPath(for: gridCell)!
+        let movie = movies[indexPath.item]
+        let posterDetailsViewController = segue.destination as! PosterDetailsViewController
+        posterDetailsViewController.movie = movie 
     }
-    */
 
 }
