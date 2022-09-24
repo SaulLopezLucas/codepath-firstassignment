@@ -12,7 +12,7 @@
 
 ### App Walkthrough GIF
 
-<img src="http://g.recordit.co/6erJcERrmy.gif" width=250><br>
+<img src="http://g.recordit.co/BTvPmgWfwN.gif" width=250><br>
 
 ### Notes
 Overall, the execution of this program went a lot more smoothly than it did last week. No major problems/bugs arose. 
